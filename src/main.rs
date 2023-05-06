@@ -29,7 +29,7 @@ impl State {
         if let Some(key) = ctx.key {
             match key {
                 VirtualKeyCode::P => self.restart(),
-                VirtualKeyCode::! => ctx.quitting = true,
+                VirtualKeyCode::Q => ctx.quitting = true,
                 _ => {}
             }
         }
@@ -44,7 +44,7 @@ impl State {
         if let Some(key) = ctx.key {
             match key {
                 VirtualKeyCode::P => self.restart(),
-                VirtualKeyCode::Q => self.quitting = true,
+                VirtualKeyCode::Q => ctx.quitting = true,
                 _ => {}
             }
         }
